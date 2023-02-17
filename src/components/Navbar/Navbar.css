@@ -1,0 +1,159 @@
+/* navbar CSS rules */
+nav {
+  width: 100%;
+  /* padding: 0.8rem ; */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* logo css */
+.logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.78rem;
+  cursor: pointer;
+  width: auto;
+  margin-right: 10%;
+}
+
+.logo-circle-wrap {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  padding: 3px;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #7000ff 0deg,
+    #7d9aff 0.04deg,
+    #ff7ad2 183.75deg,
+    #7000ff 360deg
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.logo-white-bg {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+h2 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+/* CSS for search bar */
+.search-bar {
+  position: relative;
+  display: flex;
+  width: 30%;
+}
+
+.search-bar > input {
+  border: none;
+  font-size: large;
+  background: #e2e4f0;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.search-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #a1a3d4;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+.search-icon-line {
+  width: 7px;
+  height: 2px;
+  border: none;
+  border: red;
+  background-color: #a1a3d4;
+  position: absolute;
+  bottom: 11px;
+  right: 7px;
+  transform: rotate(45deg);
+}
+
+/* links on navbar - menu  */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav > a {
+  text-decoration: none;
+  color: #8484a0;
+  padding: 18px 5px;
+}
+nav > a:hover {
+  border-bottom: 3px solid #5756b3;
+  color: black;
+}
+
+/* icons on right side of nav */
+.right-icons {
+  display: inline-flex;
+  margin-left: 5%;
+  margin-right: 10px;
+}
+
+.man-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #a1a3d4;
+}
+
+.man-icon::after {
+  width: 5px;
+  height: 5px;
+  content: "_";
+  border-radius: 100% 100% 0 0;
+  /* border-bottom: 2px solid #A1A3D4; */
+}
+
+/* menu button */
+.menu-bar-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.menu-bar1 {
+  width: 20px;
+  height: 3px;
+  background: #a1a3d4;
+}
+.menu-bar2 {
+  width: 20px;
+  height: 3px;
+  background: #a1a3d4;
+  position: absolute;
+  bottom: 0;
+}
+.menu-bar3 {
+  width: 20px;
+  height: 3px;
+  background: #a1a3d4;
+  position: absolute;
+  top: 0;
+}

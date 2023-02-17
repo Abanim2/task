@@ -1,0 +1,188 @@
+/* CSS for content to the left of world map */
+.aside {
+  width: 25%;
+  height: auto;
+  overflow: visible;
+  position: absolute;
+  left: 25px;
+  top: 20vh;
+}
+
+.aside > p:first-child {
+  font-size: 20px;
+  color: #383874;
+  font-weight: 600;
+  letter-spacing: 0.15px;
+}
+
+.aside > p:first-child > span {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-left: 15px;
+}
+#users {
+  font-weight: 500;
+  font-size: 4.5rem;
+  letter-spacing: -1.75px;
+  color: #383874;
+  margin-bottom: 12vh;
+}
+
+.side-data {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  margin: 2vh 0;
+}
+.side-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.purple-box {
+  background: #8676ff;
+}
+
+.cyan-box {
+  background: #66c8ff;
+}
+
+.orange-box {
+  background: #ff9066;
+}
+
+.purple-center {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.cyan-center {
+  width: 20px;
+  height: 0;
+  border: 3px solid white;
+}
+.cyan-center::after {
+  content: "--";
+  color: white;
+}
+
+.orange-center,
+.orange-center::after,
+.orange-center::before {
+  height: 25px;
+  width: 0px;
+  border: 3px solid white;
+}
+.orange-center::after {
+  content: "";
+  margin: 0 0 0 10px;
+}
+.orange-center::before {
+  content: "";
+  margin: 0 7px 1px -14px;
+}
+
+.side-data-text p:first-child {
+  font-family: "Roboto", sans-serif;
+  color: #383874;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.44px;
+  margin-bottom: 5px;
+}
+
+.side-data-text p:last-child {
+  color: #383874;
+  letter-spacing: 0.15px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* styles for circular indecators */
+
+.circle-wrap {
+  width: 150px;
+  height: 150px;
+  background: #ccceda;
+  border-radius: 50%;
+  border: 1px solid #dbdff1;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: #e2e4f0;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  color: #171725;
+  position: absolute;
+  z-index: 100;
+  font-weight: 300;
+  font-size: 1.7em;
+}
+
+/* color animation */
+
+.mask .fill {
+  clip: rect(0px, 76px, 150px, 0px);
+  background-color: #023aff;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(50deg);
+}
+
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(50deg);
+  }
+}
+
+.circle-text {
+  color: #383874;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.bottom-content-wrap {
+  display: inline-flex;
+  margin-top: 40px;
+  align-items: center;
+}
+.bottom-circle-text {
+  margin-left: 20px;
+}
+
+/* .bootom-indicators {
+  display: flex;
+} */
